@@ -1,0 +1,35 @@
+containers:
+  shellcheck:
+    image: koalaman/shellcheck
+    working_directory: /
+    volumes:
+      - local: take5
+        container: /take5
+        options: cached
+  runner:
+    image: alpine:3.13.2
+    working_directory: /
+    volumes:
+      - local: take5
+        container: /take5
+        options: cached
+#      - local: .dc_config.cfg
+#        container: /root/.dc_config.cfg
+#        options: cached
+
+tasks:
+  run_sc:
+    description: Run a shellcheck
+    group: Demo tasks
+    run:
+      container: shellcheck
+    #  entrypoint: use default shellcheck entrypoint
+      command: /take5/take5.sh
+
+  run:
+    description: Run the plugin as if run by bitbar on 2 secs
+    group: Demo tasks
+    run:
+      container: runner
+      entrypoint: watch
+      command: ./take5/take5.sh

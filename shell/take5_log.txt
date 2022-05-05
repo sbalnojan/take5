@@ -1,0 +1,9 @@
+timestamp: 2021-10-28_14:47:23 - state of mind: 4\n
+timestamp: 2021-10-28_16:01:38 - state of mind: 5\n
+timestamp: 2021-10-29_08:35:54 - state of mind: 4\n
+timestamp: 2021-10-29_08:51:48 - state of mind: 4\n
+timestamp: 2021-10-29_12:51:57 - state of mind: 4\n
+timestamp: 2021-11-02_12:47:25 - state of mind: 3\n
+timestamp: 2021-11-02_13:36:28 - state of mind: 3\n
+timestamp: 2021-11-02_14:30:18 - state of mind: 4\n
+timestamp: 2021-11-04_07:59:36 - state of mind: 4\n
